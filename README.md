@@ -9,9 +9,9 @@ More information regarding docker and docker compose can be found here: https://
 - If you want to run any of the services locally outside of docker then .NET 6 will also be required.
 
  ## How to run
- 1.) Make sure that docker is running.
- 2.) In the root of the project execute the command 'docker compose build'
- 3.) Then once the build has completed, you can run all the containers with 'docker compose up'
+ - Make sure that docker is running.
+ - In the root of the project execute the command 'docker compose build'. This will build the services outlined in docker-compose.yaml.
+ - Then once the build has completed, you can run all the containers with 'docker compose up'.
 
  ## How to interact with the different service
 
