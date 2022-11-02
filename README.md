@@ -1,5 +1,5 @@
-# docker-compose-demo
- A demo of how to use docker compose with APIs and databases.
+# Docker Compose Demo
+ A demo/proof of concept of how to use docker compose with APIs (.NET) and databases (MySQL).
  
  ## Prerequisites
 
