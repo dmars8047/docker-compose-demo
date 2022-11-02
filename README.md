@@ -1,5 +1,10 @@
 # docker-compose-demo
  A demo of how to use docker compose with APIs and databases.
+ 
+ ## Prerequisites
+
+- Docker. Docker Desktop is recommended since it comes with docker compose. For more information: https://docs.docker.com/desktop/
+- If you want to run any of the services locally outside of docker then .NET 6 will also be required.
 
  ## How to run
  1.) Make sure that docker is running.
