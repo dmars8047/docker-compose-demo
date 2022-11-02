@@ -1,0 +1,37 @@
+version: "3.9"
+services:
+  music-api:
+    build: ./music-api/.
+    ports:
+      - "8000:80"
+    container_name: music-api
+    environment:
+      MusicDbConnection: "server=music-db;port=3306;uid=root;pwd=music-db-test-password;database=music;"
+      SalesDataApiUrl: "http://sales-data-api/"
+  music-db:
+    build: 
+      dockerfile: MySql.Dockerfile
+      context: music-api
+    ports: 
+      - "3307:3306"
+    container_name: music-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=music-db-test-password
+      - MYSQL_DATABASE=music
+  sales-data-api:
+    build: ./sales-data-api/.
+    ports:
+      - "8001:80"
+    container_name: "sales-data-api"
+    environment:
+      SalesDataDbConnection: "server=sales-data-db;port=3306;uid=root;pwd=sales-data-db-test-password;database=salesdata;"
+  sales-data-db:
+    build:
+      dockerfile: MySql.Dockerfile
+      context: sales-data-api
+    container_name: "sales-data-db"
+    ports:
+      - "3308:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=sales-data-db-test-password
+      - MYSQL_DATABASE=salesdata
