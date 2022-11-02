@@ -10,7 +10,7 @@ More information regarding docker and docker compose can be found here: https://
 
  ## How to run
  - Make sure that docker is running.
- - In the root of the project execute the command 'docker compose build'. This will build the services outlined in docker-compose.yaml.
+ - In the root of the project execute the command 'docker compose build'. This will build the services outlined in docker-compose.yml.
  - Then once the build has completed, you can run all the containers with 'docker compose up'.
 
  ## How to interact with the different service
