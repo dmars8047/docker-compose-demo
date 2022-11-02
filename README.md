@@ -13,15 +13,15 @@
  - The Get Artists Endpiont: http://localhost:8000/music/artists
  - The Get Artist Albums Endpoint: http://localhost:8000/music/artists/{{artistId}}/albums
 
- The Sales Data Api Service can be accessed at the following URLs
+ The Sales Data API Service can be accessed at the following URLs
 
 - The Get Sales Stats Endpoint: http://localhost:8001/sales/stats/{{id}}
 
 ## Service interactions
 
-Both the Music Api Service and the Sales Data Api Service have their own databases.
+Both the Music API Service and the Sales Data API Service have their own databases.
 
-When calling the Music Api Service's 'Get Artist Albums Endpoint' the Sales Api Service's 'Get Sales Stats Endpoint' will be called for every album in the requested artist's catalog.
+When calling the Music API Service's 'Get Artist Albums Endpoint' the Sales API Service's 'Get Sales Stats Endpoint' will be called for every album in the requested artist's catalog.
 
 ## Database Information
 
@@ -41,4 +41,4 @@ The Sales Data Db can be access with the following information:
 - User: root
 - Password: sales-data-db-test-password
 
-Both databases are initially configure with using the dbscripts folder within their corresponding Api Service directory. See any file named MySql.Dockerfile for more information.
+Both databases are initialized and seeded with data using the dbscripts folder within their corresponding API Service directory. See any file named MySql.Dockerfile for more information.
