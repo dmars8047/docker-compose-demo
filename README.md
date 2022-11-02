@@ -13,14 +13,14 @@ More information regarding docker and docker compose can be found here: https://
  - In the root of the project execute the command 'docker compose build'. This will build the services outlined in docker-compose.yml.
  - Then once the build has completed, you can run all the containers with 'docker compose up'.
 
- ## How to interact with the different service
+ ## How to interact with the different services
 
- The Music API Service can be accessed at the following URLs
+ The Music API Service can be accessed at the following URLs:
 
  - The Get Artists Endpiont: http://localhost:8000/music/artists
  - The Get Artist Albums Endpoint: http://localhost:8000/music/artists/{{artistId}}/albums
 
- The Sales Data API Service can be accessed at the following URLs
+ The Sales Data API Service can be accessed at the following URLs:
 
 - The Get Sales Stats Endpoint: http://localhost:8001/sales/stats/{{id}}
 
