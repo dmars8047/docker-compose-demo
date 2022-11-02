@@ -1,5 +1,5 @@
 # Docker Compose Demo
- A demo/proof of concept of how to use docker compose with APIs (.NET) and databases (MySQL).
+ A demo/proof of concept of how to use docker compose with APIs and databases. This project uses ASP.NET WebAPIs and MySQL databases but the concepts apply to most other frameworks, languages, and/or database management systems.
  
  ## Prerequisites
 
