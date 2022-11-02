@@ -13,7 +13,7 @@ services:
       dockerfile: MySql.Dockerfile
       context: music-api
     ports: 
-      - "3307:3306"
+      - "3309:3306"
     container_name: music-db
     environment:
       - MYSQL_ROOT_PASSWORD=music-db-test-password
