@@ -17,7 +17,7 @@ More information regarding docker and docker compose can be found here: https://
 
  The Music API Service can be accessed at the following URLs:
 
- - The Get Artists Endpiont: http://localhost:8000/music/artists
+ - The Get Artists Endpoint: http://localhost:8000/music/artists
  - The Get Artist Albums Endpoint: http://localhost:8000/music/artists/{{artistId}}/albums
 
  The Sales Data API Service can be accessed at the following URLs:
